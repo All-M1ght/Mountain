@@ -16,8 +16,8 @@ learning_rate = 0.001
 
 
 
-train_dataset = MountainDataset("/Users/allmight/PycharmProjects/Mountain/src/data/train.txt", transform=transforms.ToTensor())
-test_dataset = MountainDataset("/Users/allmight/PycharmProjects/Mountain/src/data/test.txt", transform=transforms.ToTensor())
+train_dataset = MountainDataset("D:\PycharmProject\Mountain\src\data\\train.txt", transform=transforms.ToTensor())
+test_dataset = MountainDataset("D:\PycharmProject\Mountain\src\data\\test.txt", transform=transforms.ToTensor())
 
 
 
