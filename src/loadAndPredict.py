@@ -77,7 +77,7 @@ model = models.resnet50(pretrained=False)
 num_ftrs = model.fc.in_features
 model.fc = nn.Linear(num_ftrs, 2)
 
-model.load_state_dict(torch.load("resnet50-513.ckpt"))
+model.load_state_dict(torch.load("/Users/allmight/PycharmProjects/Mountain/src/model/classfiy/resnetModel.ckpt"))
 
 
 
