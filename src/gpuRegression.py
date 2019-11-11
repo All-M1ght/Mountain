@@ -123,8 +123,8 @@ model = model.to(device)
 
 # Loss and optimizer
 # criterion = nn.CrossEntropyLoss()
-# criterion = nn.MSELoss()
-criterion = nn.L1Loss()
+criterion = nn.MSELoss()
+# criterion = nn.L1Loss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 # Train the model
