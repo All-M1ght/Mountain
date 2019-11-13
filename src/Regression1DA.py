@@ -26,7 +26,7 @@ train_dataset = TallData("/Users/allmight/PycharmProjects/Mountain/src/data/tt",
 # train_dataset = TallData("/Users/allmight/PycharmProjects/Mountain/src/data/regression/case1train", transform=transforms.ToTensor())
 # test_dataset = TallData("/Users/allmight/PycharmProjects/Mountain/src/data/regression/case1test", transform=transforms.ToTensor())
 test_dataset = TallData("/Users/allmight/PycharmProjects/Mountain/src/data/regression/tt", transform=transforms.Compose([
-    transforms.TenCrop(224, vertical_flip=False),
+    transforms.TenCrop(214, vertical_flip=False),
     transforms.Lambda(lambda crops: torch.stack([transforms.ToTensor()(crop) for crop in crops])),
     transforms.Lambda(lambda crops: torch.stack([transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])(crop) for crop in crops]))
 ]))
