@@ -1,8 +1,8 @@
 import pandas as pd
 
-data = pd.read_csv(r'C:\Users\yifan_hu\Desktop\dataset\\regression\FileMountainAltitudeA.csv')
-with open("D:\PycharmProject\Mountain\src\data\\regression\case1test","w") as file:
-    for i in range(771,1101):
+data = pd.read_csv(r'/Users/allmight/PycharmProjects/Mountain/FileMountainAltitudeA.csv')
+with open("/Users/allmight/PycharmProjects/Mountain/src/data/regression/case2test","w") as file:
+    for i in range(787,1101):
         string = str(data.loc[i])
         splited = string.split("    ")
         line = splited[1].split("\n")[0]

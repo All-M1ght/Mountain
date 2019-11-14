@@ -12,7 +12,7 @@ class TallData(Dataset):
         for line in fh:
             line = line.rstrip()
             words = line.split(";")
-            imgs.append(("D:\PycharmProject\Mountain\src\data\\re\\"+words[0], int(words[1])))
+            imgs.append(("/Users/allmight/PycharmProjects/Mountain/src/data/re/"+words[0], float(words[1])))
             self.imgs = imgs
             self.transform = transform
             self.target_transform = target_transform

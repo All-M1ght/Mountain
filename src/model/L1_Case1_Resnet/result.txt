@@ -1,0 +1,11 @@
+Test Average loss of the model on the 330 test images: 1536.7157947887074
+Test Average loss of the model on the 330 test images: 1497.391072961056
+Test Average loss of the model on the 330 test images: 1500.8139905524977
+Test Average loss of the model on the 330 test images: 1507.658593565045
+Test Average loss of the model on the 330 test images: 1500.9968494762074
+Test Average loss of the model on the 330 test images: 1491.1744568795868
+Test Average loss of the model on the 330 test images: 1503.5249263879025
+Test Average loss of the model on the 330 test images: 1517.5912049264618
+Test Average loss of the model on the 330 test images: 1521.5307865027225
+Test Average loss of the model on the 330 test images: 1509.6083718964549
+Test Average loss of the model on the 330 test images: 1512.6503250584458

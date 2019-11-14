@@ -12,7 +12,7 @@ class MountainDataset(Dataset):
         for line in fh:
             line = line.rstrip()
             words = line.split(";")
-            imgs.append(("D:\PycharmProject\Mountain\src\data\ddbb\\"+words[0], int(words[1])))
+            imgs.append(("/Users/allmight/PycharmProjects/Mountain/src/data/ddbb/"+words[0], int(words[1])))
             self.imgs = imgs
             self.transform = transform
             self.target_transform = target_transform
