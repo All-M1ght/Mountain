@@ -1,9 +1,9 @@
 import pandas as pd
 
 pd.set_option("display.max_colwidth",100)
-data = pd.read_csv(r'/Users/allmight/PycharmProjects/Mountain/src/data/data3/imagesV0.1.csv')
-with open("/Users/allmight/PycharmProjects/Mountain/src/data/data3/8000+.csv","w") as file:
-    for i in range(0, 5180):
+data = pd.read_csv(r'D:\PycharmProject\Mountain\src\data\data3\imagesV0.1.csv')
+with open("D:\PycharmProject\Mountain\src\data\data3\\8000+.csv","a+") as file:
+    for i in range(0, 5177):
         # print(i)
         string = str(data.loc[i])
         # print(string)
