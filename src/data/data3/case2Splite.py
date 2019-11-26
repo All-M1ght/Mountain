@@ -2,17 +2,17 @@ import pandas as pd
 import random
 
 pd.set_option("display.max_colwidth",100)
-data = pd.read_csv(r'/Users/allmight/PycharmProjects/Mountain/src/data/data3/8000+.csv')
-trainFile = r'/Users/allmight/PycharmProjects/Mountain/src/data/data3/case2train.csv'
-testFile = r'/Users/allmight/PycharmProjects/Mountain/src/data/data3/case2test.csv'
+data = pd.read_csv(r'D:\PycharmProject\Mountain\src\data\data3\8000+.csv')
+trainFile = r'D:\PycharmProject\Mountain\src\data\data3\case2train.csv'
+testFile = r'D:\PycharmProject\Mountain\src\data\data3\case2test.csv'
 
 num = 0
 reName = ""
 start = 0
 table = {}
 pre = 0
-countLine = 111 #init
-count = 110 #init
+countLine = 104 #init
+count = 50 #init
 imgcount = 0
 randomList = []
 trainlist = []
@@ -32,7 +32,7 @@ for i in range(0, countLine):
 table[num] = str(pre) + "_" + str(countLine - 1) + "_" + str(countLine-int(pre))
 
 
-print(num)
+print(num) #count of mountain
 
 while (imgcount - count) < -5 or (imgcount - count) > 5:
     randLine = random.randint(1, num)
@@ -50,7 +50,7 @@ for i in randomList:
     start = start_end_len.split("_")[0]
     end = start_end_len.split("_")[1]
     len = start_end_len.split("_")[2]
-    for j in range(int(start),int(end)+1):
+    for j in range(int(start), int(end)+1):
         trainlist.append(j)
 
 print(trainlist.__len__())
