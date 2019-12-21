@@ -5,7 +5,7 @@ import matplotlib
 import pandas as pd
 # pd.set_option("display.max_colwidth",100)
 # data = pd.read_csv(r'/Users/allmight/PycharmProjects/Mountain/src/data/data3/case1train.csv')
-file = open("/Users/allmight/PycharmProjects/Mountain/src/data/data3/predict.txt")
+file = open("/Users/allmight/PycharmProjects/Mountain/src/data/data3/test.txt")
 talls = []
 i = 1
 for line in file.readlines():
@@ -36,7 +36,7 @@ facecolor:长条形的颜色
 edgecolor:长条形边框的颜色
 alpha:透明度
 """
-(counts, bins, patch) = plt.hist(talls, bins=2, normed=0, facecolor="blue", edgecolor="black", alpha=0.7)
+(counts, bins, patch) = plt.hist(talls, bins=9, normed=0, facecolor="blue", edgecolor="black", alpha=0.7)
 print(bins)
 print(counts)
 # 显示横轴标签
@@ -44,5 +44,5 @@ plt.xlabel("Altitude")
 # 显示纵轴标签
 plt.ylabel("count")
 # 显示图标题
-plt.title("p2")
+plt.title("74")
 plt.show()

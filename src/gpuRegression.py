@@ -15,8 +15,8 @@ num_classes = 1
 batch_size = 1
 learning_rate = 0.001
 
-train_dataset = TallData("/content/tt", transform=transforms.ToTensor())
-test_dataset = TallData("/content/tt", transform=transforms.ToTensor())
+train_dataset = TallData("/content/tt.txt", transform=transforms.ToTensor())
+test_dataset = TallData("/content/tt.txt", transform=transforms.ToTensor())
 
 # Data loader
 train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
@@ -123,8 +123,8 @@ model = model.to(device)
 
 # Loss and optimizer
 # criterion = nn.CrossEntropyLoss()
-criterion = nn.MSELoss()
-# criterion = nn.L1Loss()
+# criterion = nn.MSELoss()
+criterion = nn.L1Loss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 # Train the model

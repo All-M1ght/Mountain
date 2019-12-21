@@ -20,8 +20,8 @@ learning_rate = 0.001
 
 
 
-train_dataset = TallData("/Users/allmight/PycharmProjects/Mountain/src/data/tt", transform=transforms.ToTensor())
-test_dataset = TallData("/Users/allmight/PycharmProjects/Mountain/src/data/regression/tt", transform=transforms.ToTensor())
+train_dataset = TallData("/Users/allmight/PycharmProjects/Mountain/src/data/tt.txt", transform=transforms.ToTensor())
+test_dataset = TallData("/Users/allmight/PycharmProjects/Mountain/src/data/regression/tt.txt", transform=transforms.ToTensor())
 
 
 
